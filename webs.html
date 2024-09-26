@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreachBlocker - Cybersecurity Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0288d1;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            background-color: #01579b;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #0277bd;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #01579b;
+            color: white;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .back-button {
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #0288d1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #0277bd;
+        }
+
+        .service-item {
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .service-item img {
+            width: 300px;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1.2em;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+
+        window.onload = function() {
+            showSection('home'); // Show home section by default
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>BreachBlocker</h1>
+        <p>Your Cybersecurity Fortress</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="showSection('home')">Home</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('about')">About</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('contact')">Contact</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('services')">Services</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hidden" style="background-image: url('https://via.placeholder.com/1200x600/0288d1/ffffff/?text=Cybersecurity+Solutions'); background-size: cover; padding: 60px 20px; text-align: center; color: white;">
+        <h2 style="font-size: 3.5em; margin: 0; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Welcome to BreachBlocker</h2>
+        <p style="font-size: 1.5em; margin: 10px 0 20px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">Your one-stop solution for all cybersecurity needs.</p>
+        <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">
+            We offer comprehensive cybersecurity services to safeguard your digital assets against evolving threats.
+        </p>
+        <br>
+        <a href="javascript:void(0);" onclick="showSection('services')" class="back-button" style="font-size: 1.5em; background-color: #ffca28; color: #333;">Explore Our Services</a>
+        <br><br>
+        <img src="https://www.raxatechnosecuritysolutions.in/assets/img/Cyber-Security_Banner.jpg" alt="Cybersecurity" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+        <p style="margin-top: 40px; font-size: 1.2em; color: #ffcc00; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Confidential: Your security is our priority. All data is handled with utmost confidentiality.</p>
+    </section>
+
+    <section id="about" class="hidden">
+        <h2>About Us</h2>
+        <p>BreachBlocker is dedicated to providing top-notch cybersecurity solutions tailored to your needs.</p>
+        <img src="https://redsquid.co.uk/wp-content/plugins/phastpress/phast.php/c2VydmljZT1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGcmVkc3F1aWQuY28udWslMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjMlMkYwMyUyRkhvdy1Uby1Qcm9tb3RlLUN5YmVyLVNlY3VyaXR5LUF3YXJlbmVzcy0xLmpwZyZjYWNoZU1hcmtlcj0xNjgwMDk1MjExLTM2NzA0MCZ0b2tlbj00YTY1MjM2ODNlODZiZDA3.q.jpg" alt="About Us">
+    </section>
+
+    <section id="contact" class="hidden">
+        <h2>Contact Us</h2>
+        <p>Email: info@breachblocker.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <img src="https://callcenterstudio.com/wp-content/uploads/2023/08/The-Importance-of-Cyber-Security.jpg" alt="Contact Us">
+    </section>
+
+    <section id="services" class="hidden">
+        <h2>Our Services</h2>
+        
+        <div class="service-item">
+            <h3>Network Security</h3>
+            <img src="https://via.placeholder.com/300x200/4caf50/ffffff/?text=Network+Security" alt="Network Security">
+            <p><strong>Roles:</strong></p>
+            <ul>
+                <li><strong>Network Security Engineer:</strong> Responsible for protecting the organization's network infrastructure. They implement firewalls, VPNs, and intrusion detection systems to safeguard sensitive data.</li>
+                <li><strong>Network Administrator:</strong> Manages and maintains network systems, ensuring optimal performance, security, and connectivity across the organization.</li>
+                <li><strong>Security Analyst:</strong> Monitors and analyzes security events and alerts. They are key in identifying and mitigating potential threats to the network.</li>
+            </ul>
+        </div>
+        
+        <div class="service-item">
+            <h3>Application Security</h3>
+            <img src="https://via.placeholder.com/300x200/2196f3/ffffff/?text=Application+Security" alt="Application Security">
+            <p><strong>Roles:</strong></p>
+            <ul>
+                <li><strong>Application Security Engineer:</strong> Focuses on identifying and fixing vulnerabilities in applications during the development lifecycle, ensuring secure coding practices.</li>
+                <li><strong>Penetration Tester:</strong> Conducts ethical hacking to test application security measures, identifying weaknesses before malicious actors can exploit them.</li>
+                <li><strong>DevSecOps Engineer:</strong> Integrates security practices within the DevOps pipeline, ensuring continuous security assessments throughout the software development process.</li>
+            </ul>
+        </div>
+
+        <div class="service-item">
+            <h3>Cloud Security</h3>
+            <img src="https://via.placeholder.com/300x200/ff9800/ffffff/?text=Cloud+Security" alt="Cloud Security">
+            <p><strong>Roles:</strong></p>
+            <ul>
+                <li><strong>Cloud Security Architect:</strong> Designs secure cloud environments, ensuring that cloud resources are protected from potential threats.</li>
+                <li><strong>Cloud Compliance Specialist:</strong> Ensures that cloud services meet regulatory and compliance requirements, managing risks associated with cloud usage.</li>
+                <li><strong>Cloud Security Analyst:</strong> Monitors cloud environments for security incidents, analyzing potential breaches and responding to alerts.</li>
+            </ul>
+        </div>
+
+        <div class="service-item">
+            <h3>Incident Response</h3>
+            <img src="https://via.placeholder.com/300x200/f44336/ffffff/?text=Incident+Response" alt="Incident Response">
+            <p><strong>Roles:</strong></p>
+            <ul>
+                <li><strong>Incident Response Manager:</strong> Leads the incident response team, coordinating efforts to mitigate and resolve security incidents.</li>
+                <li><strong>Forensic Analyst:</strong> Investigates security breaches, collecting and analyzing evidence to determine how an attack occurred and how to prevent future incidents.</li>
+                <li><strong>Threat Intelligence Analyst:</strong> Gathers and analyzes threat data to understand emerging threats, providing actionable intelligence for the incident response team.</li>
+            </ul>
+        </div>
+
+        <div class="service-item">
+            <h3>Compliance and Risk Management</h3>
+            <img src="https://via.placeholder.com/300x200/9c27b0/ffffff/?text=Compliance+and+Risk+Management" alt="Compliance and Risk Management">
+            <p><strong>Roles:</strong></p>
+            <ul>
+                <li><strong>Compliance Officer:</strong> Ensures that the organization adheres to regulatory requirements and industry standards, implementing necessary policies and procedures.</li>
+                <li><strong>Risk Analyst:</strong> Assesses and identifies risks to the organization’s information assets, recommending strategies to mitigate identified risks.</li>
+                <li><strong>Governance, Risk, and Compliance (GRC) Consultant:</strong> Advises organizations on best practices for aligning IT goals with business objectives while ensuring compliance and managing risks.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BreachBlocker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
